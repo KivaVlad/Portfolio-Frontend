@@ -38,7 +38,7 @@ body {
 .container {
     max-width: 950px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 5px;
 }
 
 
@@ -362,7 +362,7 @@ body {
 }
 
 .slider_img{
-    width: 910px;
+    width: 940px;
     height: 410px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -392,15 +392,29 @@ body {
 .slider_description a {
     font-size: 16px;
     font-weight: 700;
-    text-transform: uppercase;
     margin-bottom: 10px;
     text-decoration: none;
     color: #c1c1c1;
+    position: relative;
+    z-index: 1;
     transition: all .3s ease;
 }
 
+.slider_description a::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: -15px;
+    top: -30px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    z-index: -1;
+    background-color: #4f3957;
+}
+
 .slider_description a:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
     color: #fff;
 }
 
@@ -746,6 +760,17 @@ body {
         height: 300px;
     }
 
+    .slider_description a{
+        font-size: 10px;
+    }
+
+    .slider_description a::before{
+        width: 50px;
+        height: 50px;
+        top: -18px;
+        left: -10px;
+    }
+
     .projects_arrow {
         width: 70px;
         height: 70px;
@@ -824,7 +849,7 @@ body {
 
     .header_link {
         font-size: 12px;
-        margin-right: 40px;
+        margin-left: 20px;
     }
 
     .header_nav_close_line{
@@ -929,6 +954,10 @@ body {
         height: 110px;
     }
 
+    .header_nav {
+        width: 60%;
+    }
+
     .about_title h2{
         font-size: 22px;
     }
@@ -991,7 +1020,15 @@ body {
 
 @media (max-width: 400px) {
     .about_arrow {
-        margin: 7% auto;
+        margin: 15% auto;
+    }
+
+    .projects_arrow {
+        margin: -10% auto;
+    }
+
+    .footer_arrow {
+        margin: 10% auto;
     }
 }
 
