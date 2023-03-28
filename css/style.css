@@ -364,8 +364,7 @@ body {
 .slider_img{
     width: 940px;
     height: 410px;
-    background-repeat: no-repeat;
-    background-size: cover;
+    border-radius: 0 0 30px 30px;
 }
 
 .slider_description {
@@ -761,14 +760,14 @@ body {
     }
 
     .slider_description a{
-        font-size: 10px;
+        font-size: 8px;
     }
 
     .slider_description a::before{
-        width: 50px;
-        height: 50px;
-        top: -18px;
-        left: -10px;
+        width: 40px;
+        height: 40px;
+        top: -15px;
+        left: -8px;
     }
 
     .projects_arrow {
@@ -866,7 +865,7 @@ body {
     }
 
     .about_arrow {
-        margin: 5% auto;
+        margin: 18% auto;
     }
 
     .about_info_right_slills_title {
@@ -926,9 +925,6 @@ body {
         font-size: 18px;
         margin-right: 26px;
     }
-    .header_arrow {
-        margin: -8% auto;
-    }
 
     .slider_img{
         width: 490px;
@@ -937,6 +933,35 @@ body {
 
     .projects_content {
         height: 330px;
+    }
+
+    .header_arrow, .about_arrow, .projects_arrow, .footer_arrow {
+        border-radius: 10px;
+        width: 2px;
+        height: 2px;
+        background: transparent;
+    }
+
+    .header_arrow img, .about_arrow img, .projects_arrow img, .footer_arrow img {
+        display: none;
+    }
+
+    .header_content {
+        margin-top: 5px;
+    }
+
+    .about {
+        margin-top: 100px;
+    }
+
+    .projects {
+        margin-top: 60px;
+        margin-bottom: 0;
+    }
+
+    .footer {
+        margin-top: 60px;
+        margin-bottom: 5px;
     }
 }
 
@@ -960,6 +985,10 @@ body {
 
     .about_title h2{
         font-size: 22px;
+    }
+
+    .about_arrow {
+        margin: 10% auto;
     }
 
     .projects_title h2 {
@@ -987,6 +1016,10 @@ body {
     .footer_contacts_card a {
         font-size: 10px;
     }
+
+    .footer_content {
+        height: 400px;
+    }
 }
 
 @media (max-width: 420px) {
@@ -999,12 +1032,12 @@ body {
         font-size: 14px;
     }
 
-    .about_arrow {
-        margin: 25% auto;
-    }
-
     .about_info_right_slills_title {
         font-size: 14px;
+    }
+
+    .about_arrow {
+        margin: 18% auto;
     }
 
     .slider_img{
@@ -1016,19 +1049,7 @@ body {
         height: 260px;
     }
 
+
 }
 
-@media (max-width: 400px) {
-    .about_arrow {
-        margin: 15% auto;
-    }
-
-    .projects_arrow {
-        margin: -10% auto;
-    }
-
-    .footer_arrow {
-        margin: 10% auto;
-    }
-}
 
