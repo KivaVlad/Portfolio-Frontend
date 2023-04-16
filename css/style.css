@@ -367,57 +367,6 @@ body {
     border-radius: 0 0 30px 30px;
 }
 
-.slider_description {
-    display: flex;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    isolation: isolate;
-    padding: 50px 25px 25px;
-    color: #c1c1c1;
-}
-
-.slider_description::before{
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 2%;
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-    border-radius: 0 0 0 30px;
-    background-image: linear-gradient(transparent, rgba(0, 0, 0, .8));
-}
-
-.slider_description a {
-    font-size: 16px;
-    font-weight: 700;
-    margin-bottom: 10px;
-    text-decoration: none;
-    color: #c1c1c1;
-    position: relative;
-    z-index: 1;
-    transition: all .3s ease;
-}
-
-.slider_description a::before{
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: -15px;
-    top: -30px;
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    z-index: -1;
-    background-color: #4f3957;
-}
-
-.slider_description a:hover {
-    transform: scale(1.1);
-    color: #fff;
-}
-
 .slider_button_prev, .slider_button_next {
     position: absolute;
     cursor: pointer;
@@ -760,17 +709,6 @@ body {
         height: 300px;
     }
 
-    .slider_description a{
-        font-size: 8px;
-    }
-
-    .slider_description a::before{
-        width: 40px;
-        height: 40px;
-        top: -15px;
-        left: -8px;
-    }
-
     .projects_arrow {
         width: 70px;
         height: 70px;
@@ -943,6 +881,10 @@ body {
         font-size: 18px;
         margin-right: 26px;
     }
+    
+    .about_content {
+        height: 450px;
+    }
 
     .slider_img{
         width: 490px;
@@ -969,16 +911,16 @@ body {
     }
 
     .about {
-        margin-top: 100px;
+        margin-top: 140px;
     }
 
     .projects {
-        margin-top: 60px;
+        margin-top: 100px;
         margin-bottom: 0;
     }
 
     .footer {
-        margin-top: 60px;
+        margin-top: 100px;
         margin-bottom: 5px;
     }
 }
@@ -1037,6 +979,19 @@ body {
 }
 
 @media (max-width: 420px) {
+    .header_img {
+        margin-top: -25%;
+    }
+
+    .header_img img {
+        width: 115px;
+        height: 130px;
+    }
+
+    .about_content {
+        height: 380px;
+    }
+
     .about_info_text {
         font-size: 14px;
         line-height: 16px;
